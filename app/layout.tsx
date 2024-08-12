@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
-import { HomeIcon, InstagramIcon, LinkedinIcon } from "@/components/ui/icons";
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const jetbrainsMono = JetBrains_Mono({ 
+  subsets: ["latin"], 
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jetbrainsMono"
+});
+
+const montserrat = Montserrat({ 
+  subsets: ["latin"], 
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-monstserrat"
+});
 
 export const metadata: Metadata = {
   title: "FPHaikal",
@@ -18,34 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='flex bg-dark-2'>
-        <aside className="sticky shrink-0 top-0 flex justify-center items-center w-1/3 h-screen">
-          {/* <Sidebar /> */}
-          <div className="">
-            <div className="relative z-30 mx-auto h-30 w-full max-w-30 rounded-full bg-white/20 p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-3">
-              <div className="h-[112px] sm:h-[150px] md:h-[150px] mx-auto">
-                <Image className="h-full w-full rounded-full object-cover object-center" src="/profile.png" alt="Profile" width={500} height={500} />
-              </div>
-            </div>
-            <div className="z-20 -mt-20 rounded-2xl px-14 pt-24 pb-8 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg">
-              <div className="flex flex-col">
-                <h1 className="text-primary-500 font-bold text-center text-2xl">Fahreza Pasha Haikal</h1>
-                <h1 className="text-white font-bold text-center text-md">Fullstack Developer</h1>
-                <div className="flex gap-3 justify-center mt-2">
-                  <a href="https://instagram.com/fphaikal" target="_blank" rel="noopener noreferrer">
-                    <InstagramIcon color="white" width="30" />
-                  </a>
-                  <a href="https://instagram.com/fphaikal" target="_blank" rel="noopener noreferrer">
-                    <LinkedinIcon color="white" width="30" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </aside>
-        <main className="w-2/3">
-          <HomeIcon color="primary-500" width="30" />
+      <body className={`${jetbrainsMono.variable} ${montserrat.variable}` }>
+        <Navbar />
+        <main className="w-full">
           {children}
         </main>
       </body>

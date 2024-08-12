@@ -17,6 +17,10 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      primary: "var(--font-montserrat)",
+      secondary: "var(--font-jetbrainsMono)",
+    },
     extend: {
       colors: {
         dark: "#18181b",
