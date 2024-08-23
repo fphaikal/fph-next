@@ -26,22 +26,26 @@ const config = {
         dark: "#18181b",
         "dark-2": "#0E0E11",
         "primary": {
-          "50": "#fef2f2",
-          "100": "#fee3e2",
-          "200": "#fecbca",
-          "300": "#fca7a5",
-          "400": "#f87571",
-          "500": "#ee4540",
-          "600": "#db2c27",
-          "700": "#b8211d",
-          "800": "#991f1b",
-          "900": "#7f201d",
-          "950": "#450c0a",
+          "50": "#f0fdf1",
+          "100": "#ddfbdf",
+          "200": "#bdf5c3",
+          "300": "#6de77a",
+          "400": "#4fd95e",
+          "500": "#27c038",
+          "600": "#1a9f29",
+          "700": "#187d24",
+          "800": "#196222",
+          "900": "#16511e",
+          "950": "#062d0c",
         },
       },
       animation: {
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        slide: "slide var(--speed) ease-in-out infinite alternate",
+        grid: "grid 15s linear infinite",
+
       },
       keyframes: {
         marquee: {
@@ -51,6 +55,29 @@ const config = {
         "marquee-vertical": {
           from: { transform: "translateY(0)" },
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+        slide: {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
         },
       },
     },

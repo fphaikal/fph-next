@@ -4,6 +4,6 @@
 
 @layer base {
     body{
-        @apply bg-dark-2 font-primary;
+        @apply bg-dark-2 font-secondary scroll-smooth;
     }
 }

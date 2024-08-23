@@ -1,8 +1,12 @@
-"use client";
-
-import { HomeIcon } from "./ui/icons"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+
+const navItems = [
+  {
+    name: 'Home',
+    path: '/'
+  }
+]
 
 export default function Navbar() {
   return(
