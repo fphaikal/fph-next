@@ -61,9 +61,9 @@ export default function Home() {
                         Hire Me!
                       </span>
                     </ShimmerButton>
-                    <button className="px-4 py-2.5 bg-primary-50/10 text-primary-50 rounded-full hover:bg-primary-50 hover:text-primary-500 transition-all duration-200 whitespace-pre-wrap text-center text-xs font-medium leading-none tracking-tight lg:text-lg">
+                    <Link href={'FPHaikal'} className="px-4 py-2.5 bg-primary-50/10 text-primary-50 rounded-full hover:bg-primary-50 hover:text-primary-500 transition-all duration-200 whitespace-pre-wrap text-center text-xs font-medium leading-none tracking-tight lg:text-lg">
                       Learn More
-                    </button>
+                    </Link>
                   </div> 
                   <h1 className="text-primary-50 font-normal text-xs md:text-lg mt-3 md:mt-6">Follow Me</h1>
                   <div className="flex gap-1 md:gap-3 mt-1 md:mt-2">
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
 
           {/* Naira Section */}
-          <div className="w-1/2 flex justify-end xl:me-32 2xl:me-72 mt-80 md:mt-[450px] lg:mt-96 xl:mt-52">
+          <div className="w-1/2 flex justify-end xl:me-32 2xl:me-52 mt-80 md:mt-[450px] lg:mt-96 xl:mt-52">
             <div className="w-fit">
               <div className="relative z-30 rounded-2xl m-4 p-8 md:p-14 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg">
                 <div className="flex flex-col gap-1">

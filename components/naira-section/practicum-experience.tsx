@@ -1,12 +1,12 @@
 export function PracticumExperience() {
   return (
     <>
-      <div id="practicum" className="relative flex w-full items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
-        <div className="flex flex-col min-h-screen w-full gap-10 px-80 py-44">
-          <div className="flex gap-10 w-full h-[500px]">
-            <div className="flex flex-col w-1/2 gap-10 rounded-xl ">
+      <div id="practice" className="relative flex w-full min-h-screen items-center justify-center rounded-lg 2xl:shadow-xl">
+        <div className="flex flex-col w-full gap-3 2xl:gap-10 px-5 py-5 2xl:px-80 2xl:py-44">
+          <div className="flex flex-col 2xl:flex-row  gap-3 2xl:gap-10 w-full h-fit 2xl:h-[300px]">
+            <div className="flex flex-col w-full gap-10 rounded-xl ">
               <div className="h-full flex flex-col justify-end gap-5 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:scale-105 duration-500">
-                <div className="flex flex-col gap-5 h-full justify-end  ">
+                <div className="flex flex-col gap-5 h-full justify-end">
                   <h1 className="text-white text-2xl font-bold">Volumetric and Gravimetric </h1>
                   <ul className="list-disc text-md text-white">
                     <li>Operated a burette to perform titration with high accuracy.</li>
@@ -18,7 +18,7 @@ export function PracticumExperience() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col w-1/2 gap-10 rounded-xl">
+            <div className="flex flex-col w-full gap-10 rounded-xl">
               <div className="h-full flex flex-col justify-end gap-5 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:-translate-y-4 hover:scale-105 duration-500">
                 <h1 className="text-white text-2xl font-bold">Proximate</h1>
                 <ul className="list-disc text-md text-white">
@@ -31,8 +31,8 @@ export function PracticumExperience() {
               </div>
             </div>
           </div>
-          <div className="flex gap-10 w-full h-[500px]">
-            <div className="flex flex-col w-1/2 gap-10 rounded-xl">
+          <div className="flex flex-col 2xl:flex-row gap-3 2xl:gap-10 w-full h-[300px]">
+            <div className="flex flex-col w-full gap-10 rounded-xl">
               <div className="h-full flex flex-col justify-end gap-5 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:scale-105 duration-500">
                 <div className="flex flex-col gap-5 h-full justify-end  ">
                   <h1 className="text-white text-2xl font-bold">Microbiology</h1>
@@ -44,7 +44,7 @@ export function PracticumExperience() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col w-1/2 gap-10 rounded-xl">
+            <div className="flex flex-col w-full gap-10 rounded-xl">
               <div className="h-full flex flex-col justify-end gap-5 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:-translate-y-4 hover:scale-105 duration-500">
                 <h1 className="text-white text-2xl font-bold">Instrument Analysis </h1>
                 <ul className="list-disc text-md text-white">
