@@ -40,21 +40,21 @@ export default function AboutMe() {
         <div className="flex flex-col w-full 2xl:w-1/3 gap-5 2xl:gap-10">
           <div className="flex flex-col gap-2 h-1/3 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:-translate-y-4 hover:scale-105 duration-700">
             <OrganizationIcon color="primary-500" width="50" />
-            <h1 className="text-primary-50 text-lg 2xl:text-2xl font-bold">Student Council of SMTI Yogyakarta Vocational High School</h1>
-            <h1 className="text-primary-50 text-md 2xl:text-xl">Skills and Entrepreneurship (Danus)</h1>
-            <h1 className="text-primary-50 text-sm 2xl:text-lg">Sep 2023 - Present </h1>
+            <h1 className="text-primary-50 text-lg 2xl:text-2xl font-bold">Committee for Introduction to the School Environment</h1>
+            <h1 className="text-primary-50 text-md 2xl:text-xl">Documentation</h1>
+            <h1 className="text-primary-50 text-sm 2xl:text-lg">July 2024 </h1>
           </div>
           <div className="flex flex-col gap-1 h-1/3 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:-translate-y-4 hover:scale-105 duration-700">
             <JapanIcon color="primary-500" width="50" />
-            <h1 className="text-primary-50 text-lg 2xl:text-2xl font-bold">Language Japanese Club (AOTAKA CLUB)</h1>
-            <h1 className="text-primary-50 text-md 2xl:text-xl">General Treasurer</h1>
-            <h1 className="text-primary-50 text-sm 2xl:text-lg">2022 - June 2024</h1>
+            <h1 className="text-primary-50 text-lg 2xl:text-2xl font-bold">GASKAN (Gerbang Akses Pintar dan Kehadiran)</h1>
+            <h1 className="text-primary-50 text-md 2xl:text-xl">Web Developer</h1>
+            <h1 className="text-primary-50 text-sm 2xl:text-lg">Oktober 2023 - Present</h1>
           </div>
           <div className="flex flex-col gap-1 h-1/3 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:-translate-y-4 hover:scale-105 duration-700">
             <ElectionIcon color="primary-500" width="50" />
-            <h1 className="text-primary-50 text-lg 2xl:text-2xl font-bold">Student Council Election Commission (KPO)</h1>
-            <h1 className="text-primary-50 text-md 2xl:text-xl">Field Executive (Sie Pelaksana)</h1>
-            <h1 className="text-primary-50 text-sm 2xl:text-lg">Aug 2023 - Sep 2023</h1>
+            <h1 className="text-primary-50 text-lg 2xl:text-2xl font-bold">Volunteer Chemicfest #8</h1>
+            <h1 className="text-primary-50 text-md 2xl:text-xl">Decoration & Documentation, Web Developer</h1>
+            <h1 className="text-primary-50 text-sm 2xl:text-lg">Jan 2024 - Mei 2024</h1>
           </div>
         </div>
       </div>

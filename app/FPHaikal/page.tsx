@@ -9,8 +9,59 @@ import { ElectionIcon, EmailIcon, InstagramIcon, JapanIcon, LinkedinIcon, Locati
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity"
 import ShimmerButton from "@/components/magicui/shimmer-button"
 import CopyButton from "@/components/copy-button"
-import { PracticumExperience } from "@/components/fph-section/practicum-experience";
+import {
+  BarChartIcon,
+  BellIcon,
+  CalendarIcon,
+  FileTextIcon,
+  GlobeIcon,
+  InputIcon,
+} from "@radix-ui/react-icons";
+import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
+
+
+import { PracticumExperience } from "@/components/fph-section/certificate";
 import AboutMe from "@/components/fph-section/about-me";
+import { Container, DoorOpen, Ticket } from "lucide-react";
+
+const features = [
+  {
+    Icon: BarChartIcon,
+    name: "Smart Quality",
+    description: "Create a website for quality control reports.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+  },
+  {
+    Icon: Container,
+    name: "NATSLOCK: Next-generation And Smart Lifestyle Locker",
+    description: "This project was created for the needs of the P5 grade (Pancasila Student Profile Strengthening Project)",
+    href: "https://github.com/fphaikal/natslock",
+    cta: "See Repository",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4",
+  },
+  {
+    Icon: DoorOpen,
+    name: "GASKAN (Gerbang Akses Pintar dan Kehadiran)",
+    description: "Use the calendar to filter your files by date.",
+    href: "https://gaskan.smtijogja.sch.id",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+  },
+  {
+    Icon: Ticket,
+    name: "Chemicfest #8",
+    description: "In 2024 Chemicfest #8 used a website for ticket purchases and was used for live streaming.",
+    href: "/",
+    cta: "Learn more",
+    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+  },
+];
 
 export default function FPHaikal() {
   const [iconSize, setIconSize] = useState("30");
@@ -60,7 +111,7 @@ export default function FPHaikal() {
           <div className="w-1/2 flex justify-center ms-0 xl:ms-52 mt-56 md:mt-0 lg:mt-72 xl:mt-32">
             <div className="w-fit">
               <div className="relative z-30 rounded-2xl m-4 p-8 md:p-14 bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg">
-              <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1">
                   <h1 className="text-primary-50 font-normal md:text-4xl">Hi,👋</h1>
                   <h1 className="text-primary-500 font-bold md:text-4xl"><span className="text-primary-50">I&apos;m</span> Fahreza Haikal</h1>
                   <div className="flex items-center justify-between">
@@ -76,7 +127,7 @@ export default function FPHaikal() {
                     <Link href={'FPHaikal'} className="px-4 py-2.5 bg-primary-50/10 text-primary-50 rounded-full hover:bg-primary-50 hover:text-primary-500 transition-all duration-200 whitespace-pre-wrap text-center text-xs font-medium leading-none tracking-tight lg:text-lg">
                       Learn More
                     </Link>
-                  </div> 
+                  </div>
                   <h1 className="text-primary-50 font-normal text-xs md:text-lg mt-3 md:mt-6">Follow Me</h1>
                   <div className="flex gap-1 md:gap-3 mt-1 md:mt-2">
                     <Link href="https://instagram.com/fp_haikal" target="_blank" rel="noopener noreferrer">
@@ -95,9 +146,24 @@ export default function FPHaikal() {
       </div>
       <AboutMe />
       <PracticumExperience />
-
-      <div className="flex flex-col gap-10">
-
+      <div className="flex flex-col items-center  px-5 py-20 2xl:px-80 2xl:py-32 gap-20 h-screen w-full">
+        <h1 className="text-8xl text-primary-50 font-bold">My Projects</h1>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
+          <div className="w-full h-[300px] bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:scale-105 duration-500">
+            <h1 className="text-primary-50 text-xl font-bold">Project 1</h1>
+          </div>
+          <div className="w-full h-[300px] bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:scale-105 duration-500">
+            <h1 className="text-primary-50 text-xl font-bold">Project 2</h1>
+          </div>
+          <div className="w-full h-[300px] bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:scale-105 duration-500">
+            <h1 className="text-primary-50 text-xl font-bold">Project 3</h1>
+          </div>
+        </div> */}
+        <BentoGrid className="lg:grid-rows-3">
+          {features.map((feature) => (
+            <BentoCard key={feature.name} {...feature} />
+          ))}
+        </BentoGrid>
       </div>
     </>
   )
