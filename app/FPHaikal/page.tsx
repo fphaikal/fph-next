@@ -31,8 +31,8 @@ const features = [
     description: "Create a website for quality control reports.",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+    // background: <img src={'/fph/smscp.png'} alt="" width={1920} height={1920} className="absolute -right-20 -top-20 opacity-60" />,
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3 bg-primary-50",
   },
   {
     Icon: Container,
@@ -41,7 +41,7 @@ const features = [
     href: "https://github.com/fphaikal/natslock",
     cta: "See Repository",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4",
+    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-4 bg-primary-50",
   },
   {
     Icon: DoorOpen,
@@ -50,7 +50,7 @@ const features = [
     href: "https://gaskan.smtijogja.sch.id",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-primary-50",
   },
   {
     Icon: Ticket,
@@ -59,7 +59,7 @@ const features = [
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 bg-primary-50",
   },
 ];
 
@@ -146,7 +146,7 @@ export default function FPHaikal() {
       </div>
       <AboutMe />
       <PracticumExperience />
-      <div className="flex flex-col items-center  px-5 py-20 2xl:px-80 2xl:py-32 gap-20 h-screen w-full">
+      <div id="projects" className="flex flex-col items-center  px-5 py-20 2xl:px-80 2xl:py-32 gap-20 h-screen w-full">
         <h1 className="text-8xl text-primary-50 font-bold">My Projects</h1>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
           <div className="w-full h-[300px] bg-gradient-to-br from-dark-2 to-dark border-dark border-2 shadow-lg rounded-xl p-10 hover:scale-105 duration-500">
